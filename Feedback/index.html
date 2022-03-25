@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Feedback</title>
+	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Bhavesh Haswani">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script>		<!--<script language="javascript"-->
+			function validateForm() 
+            {
+				var fn = document.forms["FeedbackForm"]["fname"].value;
+				if(fn == "") 
+                {
+					alert("Please Enter First Name");
+					return false;
+				}
+
+				var mn = document.forms["FeedbackForm"]["mname"].value;
+				if(mn == "") 
+                {
+					alert("Please Enter Middle Name");
+					return false;
+				}
+
+				var ln = document.forms["FeedbackForm"]["lname"].value;
+				if(ln == "") 
+                {
+					alert("Please Enter Last Name");
+					return false;
+				}
+
+				var gen = document.forms["FeedbackForm"]["gender"].value;
+				if(gen == "") 
+                {
+					alert("Please Specify Gender");
+					return false;
+				}
+
+				var resadd = document.forms["FeedbackForm"]["ResAdd"].value;
+				var peradd = document.forms["FeedbackForm"]["PerAdd"].value;
+				if(resadd == "") 
+                {
+					alert("Please Enter Residential Address.");
+					return false;
+				}
+				if(peradd == "") 
+                {
+					alert("Please Enter Permanent Address.");
+					return false;
+				}
+
+				var emID = document.forms["FeedbackForm"]["emailID"].value;
+				var EmailVal=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if(emID == "" || !EmailVal.test(emID)) 
+                {
+					alert("Invalid E-mail ID!");
+					return false;
+				}
+
+				var mob = document.forms["FeedbackForm"]["phone"].value;
+				var MobVal = /^[6-9]\d{9}$/;
+				if(mob == "" || !MobVal.test(mob)) 
+                {
+					alert("Invalid Contact Number!");
+					return false;
+				}
+				
+			}
+		</script>
+
+	</head>
+
+	<body> <center> <font face="tahoma">		<!--bgcolor="#F6A90f"--><!--background="2.jpg"*-->
+		<header>
+			<a class="logo">Bhavesh Haswani</a>
+            <ul class= "menu">
+                   <li><a href="..\Home\index.html">Home</a></li>
+                   <li><a href="..\About\index.html">About Me</a></li>
+                   <li><a href="..\Social Media\index.html">Follow Me!</a></li>
+                   <li><a href="..\Feedback\index.html">Feedback</a></li> 
+                   <li><a href="..\Signin\Logout.php">Logout</a></li>
+					<!--<li><a href="..\Signin\login.html">Signin</a></li>-->
+            </ul>
+		</header>
+		<h2>Your Feedback</h2>
+		<!-- <form name="FeedbackForm" action="feedback_details.php" method="post"> <!--onsubmit="return validateForm()"> -->
+		<form name="FeedbackForm" action="feedback_details.php" onsubmit="return validateForm()" method="post"> 
+			<table border="1px" cellpadding="12px" cellspacing="1px" width="80%">		<!--bgcolor="#9EBFC6"--->
+				<tr>
+					<th align="right">First Name</th>
+					<td><input type="text" size="100%" name="fname" value=""></td>
+				</tr> <tr>
+					<th align="right">Middle Name</th>
+					<td><input type="text" size="100%" name="mname" value=""></td>
+				</tr> <tr>
+					<th align="right">Last Name</th>
+					<td><input type="text" size="100%" name="lname" value=""></td>
+				</tr>
+
+				<tr>
+					<th align="right">Gender</th>
+					<td>
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other
+					</td>
+				</tr>
+				
+				<tr>
+					<th><label for="start">Date Of Birth</label></th>
+					<td>
+						<input type="date" name="dob" value="" min="1950-12-31" max="2002-12-31">
+					</td>
+				</tr>
+				
+				<tr>
+					<th align="right">Your Interests</th>
+					<td>
+						<input type="checkbox" name="optional[]" value="CS" checked disabled>Web Designing
+						<input type="checkbox" name="optional[]" value="C">Chemistry
+						<input type="checkbox" name="optional[]" value="Eco">Economics
+						<input type="checkbox" name="optional[]" value="Bio">Biology
+						<input type="checkbox" name="optional[]" value="CS">Computer Science <br/>
+						<input type="checkbox" name="optional[]" value="Elex">Electronics and Communication
+					</td>
+				</tr>
+				
+				<tr>
+					<th align="right">Your college</th>
+					<td>
+						<select name="college">
+							<option value="Watumull">Watumull Institute Of Electronic Engineering And Computer Technology</option>
+							<option value="Thadomal">Thadomal Shahani Engineering College</option>
+							<option value="Vivekanda">Vivekanand Education Society's Institute Of Technology</option>
+							<option value="Others">Others</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<th align="right">Residential Address</th>
+					<td><input type="text" size="100%" name="ResAdd" value=""></td>
+				</tr>
+
+				<tr>
+					<th align="right">Permanent Address</th>
+					<td><input type="text" size="100%" name="PerAdd" value=""></td>
+				</tr>
+
+				<tr>
+					<th align="right">Email ID</th>
+					<td><input type="text" name="emailID" size="70%" ></td>
+				</tr>
+
+				<tr>
+					<th align="right">Mobile</th>
+					<td>+91 - <input type="text" name="phone" ></td>
+				</tr>
+                
+                <tr>
+					<th align="right">Message</th>
+					<td><input type="text" size="100%" name="message" value=""></td>
+				</tr>
+
+				<tr align="center">
+					<td colspan="2">
+						<button name="submit">Submit</button>
+						<input type="reset" value="Cancel">
+					</td>
+				</tr>
+
+			</table>
+		</form>
+	</font> </center> </body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Bhavesh Haswani">
+		<link rel="icon" href="favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Signup</title>
+        <link rel="stylesheet" href="signup-style.css">
+    </head>
+    <body>
+        <main>
+            <div class="background">
+                <div class="text">
+                    <h1>Signup</h1>
+                        <p>Have Account? <a href="index.html">Login!</a></p>
+                </div>
+                <div class="box">
+                    <form class="form" action="registration.php" method="post">
+                        <input type="text" name="fullname" class="fullname" placeholder="Full Name" required>
+                        <input type="email" name="email" class="email" placeholder="someone@abc.com" required>
+                        <input type="text" name="user" class="username" placeholder="Username" required>
+                        <input type="password" name="password" class="password" placeholder="Password" required>
+                        <input type="submit" name="create" class="button" value="Create Account">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

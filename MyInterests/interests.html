@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Bhavesh Haswani">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to my homepage!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mycss.css">
+        <link rel="stylesheet" href="slicknav.css">
+    </head>
+    <body>
+       <div class= "banner-area">
+           <header>
+               <a class="logo">Bhavesh Haswani</a>
+               <ul class= "menu">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="About\index.html">About Me</a></li>
+                   <li><a href="Social Media\index.html">Contact</a></li>
+                   <li><a href="Feedback\index.html">Feedback</a></li> 
+                   <li><a href="Signin\login.html">Signin</a></li> 				   
+               </ul>
+           </header>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" style="font-size:20px"><b>Interests and Hobbies</b></button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')"style="font-size:20px"><b>Goals</b></button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')"style="font-size:20px"><b>Ambitions</b></button>
+</div>
+<h2><br/></h2>
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>Coding</h3>
+  <p>I had never written a single line of meaningful code before coming to IITB (okay, let's face it, HTML and LOGO aren't programming languages). Now I can code in many languages, and I even have a blog and YouTube channel for programming. </p>
+
+<h3>Music</h3>
+<p> I had been interested in music ever since childhood. I used to play the piano, and currently I play the Guitar. I also use a loop station to cover Ed Sheeran, who is also my favourite artist. I also like Linkin Park, Coldplay, Eminem and a few Hindi songs.</p>
+
+<h3>Writing</h3>
+<p>I am an active writer on Quora and my Blog. Most of my writing evolves around JEE preparations, Computer Science, Competitve exams, and my life.</p>
+<h3>Reading</h3>
+<p>
+I have recently developed a taste for reading. I have read two books called "Think and Grow Rich" and "Zero to One". I really liked them, and I am currently reading Harry Potter and the Philosophers Stone. I also enjoy reading standard academic books.
+</p></div>
+<div id="Paris" class="tabcontent">
+ 
+  <p>I am a startup enthusiast. I am currently working on something, but its in a very initial stage. Let's see where do I reach. I also have some short term goals, like becoming better at coding, knowing more about myself, etc.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  
+  <p>My amibition in life to become a great human being. I want to help and reach out to as many people as possible, and want to make a difference in the world as we see it today.</p>
+</div>  
+
+</br>
+</br>
+</br>
+
+<p align="left">Click on the tabs above to see the details.</p>
+<script>
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<script src="myJS.js"></script>
+</body>
+</html>

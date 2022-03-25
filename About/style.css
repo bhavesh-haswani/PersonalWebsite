@@ -1,0 +1,244 @@
+header
+{
+   /*background:#0d98ba;*/				/*35424a*/
+   /*margin:0;*/
+   padding-top: 0%;		/*padding: 15px 60px;*/
+   min-height:60px;
+   padding-bottom:1.5%;		/*You can change px to % First Submit it*/
+   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+	background: rgb(0,0,0,0.2);
+}
+.menu
+{
+    width: 42%;
+    float: right;
+    list-style: none;
+}
+.logo
+{
+    text-decoration: none;
+	padding-left:10%;
+	/*background: #FFA500;*/
+    color: white;  /*seashell*/
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 50px;
+	padding-top: 20px;
+    width: 20%;
+    float: left;
+    opacity: 0.6;
+}
+
+.menu li
+{
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: seashell;		/*seashell*/
+    font-size: 13px;
+    float:left;
+}
+
+.menu li:hover
+{
+    background: #A9A9A9;		/*6f5c98*/
+    opacity: 0.8;
+}
+
+.menu li:hover a
+{
+    color: black;		/*black*/
+    opacity: 0.8;
+}
+
+.menu li a
+{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;  /*seashell*/
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+body
+{
+    margin:0;
+    padding:0;
+	background:white; /*seashell*/
+    
+	
+}
+
+.bg{
+	background: url(2.jpg) no-repeat;
+	background-position: auto;
+    /*background-size: 1920px 1280px ;*/
+    background-size: 100% 100% ;
+}
+
+.box
+{
+    width: 800px;
+    background: rgb(0,0,0,0.1);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.6%;
+    color: white;	/*seashell*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.boxx
+{
+    width: 100%;
+    background: rgb(0,0,0,0.1);
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.6%;
+    color: black;	/*seashell text*/
+		/*no change??*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bg2
+{
+	/*background: url(3.jpg) no-repeat;*/
+	/*background-position: auto;
+    /*background-size: 1920px 1280px ;*/
+    /*background-size: 1920px 1440px ;
+    background-size: 100% 100% ;*/
+	
+	background:white; /* bg */
+	text-align: center;
+}
+h3{
+	font-size:25px;
+}
+
+strong{
+	font-size:30px;
+}
+
+.box-img
+{
+    border-radius: 10%;
+    width: 210px;
+    height: 210px; 
+}
+
+.box h1
+{
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-weight: 120;
+}
+
+.box  h2
+{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box p
+{
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: 90;
+}
+.resume
+{
+  margin-top: -50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: #f9f9f9;
+}
+.resume h3
+{
+  margin-bottom: 50px;
+}
+.timeline
+{
+  list-style-type: none;
+  position: relative;
+}
+.timeline:before
+{
+  content: '';
+  background-color: #555;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 2;
+}
+.timeline li
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.timeline li h4
+{
+  font-size: 20px;
+}
+.timeline li h4 span
+{
+  font-weight: bold;
+
+}
+.timeline li:before
+{
+  content: '';
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #000;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+
+}
+.row
+{
+  padding: 30px 0;
+  font-size: 22px;
+}
+/*
+.text-center{
+	
+}*/
+
+.footer
+{
+  background: #fff;
+  height: 100px;
+  margin-top: 10px;
+  color: #000;
+  padding-top: 5px;
+  padding-bottom:10px;
+  /*padding: 10px;*/
+  font-size: 30px;
+  
+  
+ /* padding-bottom:40px;*/
+background: rgb(0,0,0,0.2);						/* background:#35424a;*/ /*linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));, url(img/b2.jpg);*/
+ /* background-position: center;
+  background-size: cover;
+  background-attachment: fixed;*/
+  color: #fff;
+
+}
+/*
+
+.contact .col-md-4 .fa
+{
+  padding: 10px;
+  font-size: 40px;
+
+}
+*/

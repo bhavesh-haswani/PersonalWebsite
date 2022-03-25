@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Bhavesh Haswani">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to my Homepage!</title>
+        <meta name="description" content="">
+        <link rel="icon" href="favicon.jpg">
+        <!-- <link rel="icon" type="image/x-icon" href="favicon.jpg"  /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="sytle.css">
+        <link rel="stylesheet" href="slicknav.css">
+    </head>
+    <body>
+       <div class= "banner-area">
+           <header>
+               <a class="logo">Bhavesh Haswani</a>
+               <ul class= "menu">
+                   <li><a href="..\Home\index.html">Home</a></li>
+                   <li><a href="..\About\index.html">About Me</a></li>
+                   <li><a href="..\Social Media\index.html">Follow Me!</a></li>
+                   <li><a href="..\Feedback\index.html">Feedback</a></li> 
+				   <li><a href="..\Signin\logout.php">Logout</a></li>
+                   <!--<li><a href="Signin\login.html">Signin</a></li>--> 				   
+               </ul>
+           </header>
+           <div class="banner-text">
+               <h2 align="center">Hello!</h2>
+			   <h2>Welcome To My Website</h2>
+               <h2 align="center">I'm A Web Designer </h2> 
+               <!-- <a href="Social Media\index.html">Follow me on social media</a> -->
+           </div>
+       </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="jquery.slicknav.js"></script>
+        <script>
+            $('.menu').slicknav({
+                'appendTo' : 'header',
+                'label' : ''
+            });
+        </script> 
+    </body>
+</html>

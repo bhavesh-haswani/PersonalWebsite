@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-16">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bhavesh Haswani">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="icon" href="favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="login-style.css">
+        <title>Log-In</title>
+    </head>
+    <body>
+        <main>
+            <div class="background">
+                <div class="text">
+                    <h1>Login</h1>
+                    <p>No Account? <a href="signup.html">Sign-Up!</a></p>
+                </div>
+                <div class="box">
+                    <form class="form" action="validation.php" method="post">
+                        <input type="text" name="user" class="username" placeholder="Usermane" required>
+                        <input type="password" name="password" class="password" placeholder="Password" required>
+                        <input type="submit" name="lg" class="button" value="Login">
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

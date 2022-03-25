@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.hh
+{
+   /*background:#0d98ba;*/				/*35424a*/
+   margin-top:0
+   padding-top: 0%;	
+	/*padding: 15px 60px;*/
+   min-height:70px;
+   padding-bottom:0%;		/*You can change px to % First Submit it*/
+   /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
+	background: rgb(0,0,0,0.2);
+	margin:auto;
+
+}
+
+.menu
+{
+    width: 42%;
+    float: right;
+    list-style: none;
+}
+
+.menu li
+{
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: seashell;		/*seashell*/
+    font-size: 13px;
+    float:left;
+}
+
+.menu li:hover
+{
+    background: #A9A9A9;		/*6f5c98*/
+    opacity: 0.8;
+}
+
+.menu li:hover a
+{
+    color: black;		/*black*/
+    opacity: 0.8;
+}
+
+.menu li a
+{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;  /*seashell*/
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.logo
+{
+    text-decoration: none;
+	padding-left:10%;
+	/*background: #FFA500;*/
+    color: white;  /*seashell*/
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    width: 30%;
+    float: left;
+    opacity: 0.6;
+}
+body{
+	background-image: url(sm.jpg);
+	background-position: center 30px;
+    -webkit-background-size: cover ;
+    background-size: cover ;
+    height: 100vh;
+	background-size: 100% 100% ;
+	
+}
+
+.text{
+	padding-left:9%;
+	line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: seashell;		/*seashell*/
+    font-size: 21px;
+	width:80%
+}
+.bold{
+	padding-left:9%;
+	line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: seashell;		/*seashell*/
+    font-size: 40px;
+	width:80%
+}
+
+.quote{
+	font-size: 24px;
+}
+
+
+body {
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype");
+}
+
+.container {
+  margin: 50px auto;
+  width: 90%;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  color:#FF0000;
+}
+
+.accordion {
+  background: #333;
+  width: 100%;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 1px solid;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab:hover .social a:before {
+  margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+  margin-left: -5px;
+}
+
+.tab .content {
+  background: #fff;
+  width: 360px;
+  height: 200px;
+  margin-left: 80px;
+  padding: 50px 0 0 15px;
+  position: relative;
+}
+
+.tab .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+.social a:after,
+.social a:before {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Genericons;
+  color: #fff;
+}
+
+.social a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+
+.youtube a:before,
+.youtube a:after {
+  content: '\f213';
+}
+.youtube a:after {
+  background-color: #ff0000;
+}
+
+.twitter a:before,
+.twitter a:after {
+  content: '\f202';
+}
+.twitter a:after {
+  background-color: #6dc5dd;
+}
+
+.facebook a:before,
+.facebook a:after {
+  content: '\f204';
+}
+.facebook a:after {
+  background-color: #3b5998;
+}
+
+.linkedin a:before,
+.linkedin a:after {
+  content: '\f208';
+}
+.linkedin a:after {
+  background-color: #00a9cd;
+}
+
+.instagram a:before,
+.instagram a:after {
+  content: '\f215';
+}
+.instagram a:after {
+  background-color: #6dc993;
+}
+
+.github a:before,
+.github a:after {
+  content: '\f200';
+}
+.github a:after {
+  background-color: #6e5494;
+}
+
+/*
+.gmail a:before,
+.gmail a:after {
+  content: '\f200';
+}
+.gmail a:after {
+  background-color: #FFFC00;
+}
+*/
+
+/*
+.snapchat a:before,
+.snapchat a:after {
+  content: '\f200';
+}
+.snapchat a:after {
+  background-color: #FFFC00;
+}
+*/
+
+@media (max-width: 950px) {
+  .container {
+    width: 70%;
+  }
+
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto;
+  }
+
+  .tab .content {
+    width: 85%;
+  }
+
+  .tab:hover {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .container {
+    width: 95%;
+  }
+
+  .accordion {
+    width: 100%;
+    min-width: 350px;
+  }
+}
